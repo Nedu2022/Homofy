@@ -325,7 +325,7 @@ button {
 
 /*========== POPULAR ==========*/
 .popular__container {
-  padding: 1rem 0 5rem;
+  padding: 1rem 0 2rem;
 }
 
 .popular__card {
@@ -366,20 +366,254 @@ button {
 }
 
 .popular__card:hover {
-  box-shadow: h;
+  box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
 }
 
 /* Swiper class */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*========== VALUE ==========*/
+.value__container {
+  row-gap: 3rem;
+}
+
+.values__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.value__orbe{
+  width: 266px;
+  height: 316px;
+  background-color: hsl(228, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+
+.value__img {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsl(228deg, 66%, 25%, .25%);
+}
+
+.value__description {
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.value__accordion {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.value__accordion-item {
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  border-radius: .5rem;
+  padding: 1rem .75rem;
+}
+
+.value__accordion-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+} 
+
+.value__accordion-icon {
+  background-color: var(--first-color-lighten);
+  padding: 5px;
+  border-radius: .25rem;
+  color: var(--first-color);
+  margin-right: .75rem;
+  transition: .3s;
+}
+
+.value__accordion-title {
+  font-size: var(--small-font-size);
+}
+
+.value__accordion-arrow{
+  display: inline-flex;
+  background-color: var(--first-color-lighten);
+  padding: .25rem;
+  color: var(--first-color);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-left: auto;
+  transition: .3s;
+}
+
+.value__accordion-arrow i {
+  transition: .4s;
+}
+
+.value__accordion-description {
+  font-size: var(--smaller-font-size);
+  padding: 1.25rem 2.5rem 0 2.75rem;
+}
+
+.value__accordion-content{
+  overflow: hidden;
+  height: 0;
+  transition: all .25s ease;
+} 
 
 /*Rotate icon add shadows*/
+ .accordion-open {
+  box-shadow: 0 12px 32px hsl(228, 66%, 45%, .1);
+ }
+
+ .accordion-open .value__accordion-icon{
+  box-shadow: 0 4px 4px hsla(228, 66%, 45%, .1);
+ }
+
+ .accordion-open .value__accordion-arrow{
+  box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
+ }
+
+ .accordion-open .value__accordion-arrow i{
+  transform: rotate(-180deg);
+ }
 
 /*========== CONTACT ==========*/
+.contact__container{
+  row-gap: 2rem;
+}
+
+.contact__images{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__orbe{
+  width: 266px;
+  height: 316px;
+  background-color: hsl(228, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+
+.contact__img{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+
+.contact__description{
+  font-size: var(--smaller-font-size);
+  margin-bottom: 2.5rem;
+}
+
+.contact__card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem .75rem;
+}
+
+.contact__card-box{
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  padding: 1.25rem .75rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.contact__card-info {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact__card i {
+  padding: 6px;
+  background-color: var(--first-color-lighten);
+  border-radius: 6px;
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.contact__card-title{
+  font-size: var(--normal-font-size);
+}
+
+.contact__card-button{
+  font-size: var(--smaller-font-size);
+  padding: 14px 0;
+  width: 100%;
+  border-radius: .25rem;
+  background: var(--first-color-lighten);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  box-shadow: none;
+}
+
+.contact__card-button:hover {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+.contact__card-box:hover {
+  box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
+}
+
 
 /*========== SUBSCRIBE ==========*/
+.subscribe {
+  padding: 2.5rem 0;
+}
 
+.subscribe__container {
+  background-color: var(--first-color);
+  padding: 3rem 2rem;
+  border-radius: 1.25rem;
+  border: 6px solid var(--first-color-light);
+  text-align: center;
+}
+
+.subscribe__title {
+  font-size: var(--h2-font-size);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.subscribe__description {
+  color: hsl(228, 90%, 92%);
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.subscribe__button {
+  border: 2px solid #fff;
+  background: var(--first-color-light);
+  font-size: var(--small-font-size);
+}
+
+.subscribe__button:hover {
+  background-color: var(--first-color);
+}
+
+/*========== FOOTER ==========*/
 
 /*========== REUSABLE CSS CLASSES ==========*/
 .container {
