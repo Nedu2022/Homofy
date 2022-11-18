@@ -7,12 +7,12 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(228, 66%, 53%);
-  --first-color-alt: hsl(228, 66%, 47%);
-  --first-color-light: hsl(228, 62%, 59%);
+  --first-color:hsl(202, 95%, 41%);
+  --first-color-alt: hsl(209, 100%, 30%);
+  --first-color-light: hsl(200, 100%, 49%);
   --first-color-lighten: hsl(228, 100%, 97%);
   --second-color: hsl(25, 83%, 53%);
-  --title-color: hsl(228, 57%, 28%);
+  --title-color: hsl(202, 100%, 16%);
   --text-color: hsl(228, 15%, 50%);
   --text-color-light: hsl(228, 12%, 75%);
   --border-color: hsl(228, 99%, 98%);
@@ -37,6 +37,8 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  --swiper-theme-color: #1a659e;
 }
 
 ::-webkit-scrollbar {
@@ -126,7 +128,7 @@ button {
 }
 
 body.dark-theme {
-  --first-color: hsl(228, 66%, 52%);
+  --first-color: hsl(202, 95%, 41%);
   --second-color: hsl(25, 57%, 54%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 70%);
@@ -301,7 +303,7 @@ body.dark-theme {
 /*========== BUTTON ==========*/
 .button {
   display: inline-block;
-  background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
+  background: linear-gradient(101deg, hsl(204, 39%, 55%), hsl(228, 66%, 37%));
   color: #fff;
   padding: 14px 28px;
   border-radius: 0.3rem;
